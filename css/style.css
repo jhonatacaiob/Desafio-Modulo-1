@@ -19,6 +19,7 @@
 .menu nav ul{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .menu nav ul li{
     padding: 0 10px;
