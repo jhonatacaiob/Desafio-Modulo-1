@@ -4,8 +4,8 @@
     background-color: rgb(248, 249, 250);
 }
 .menu{
-    max-width: 1200px;
-    height: 30px;
+    max-width: 90%;
+    height: 1hv;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +47,8 @@
 main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 
@@ -54,16 +56,28 @@ main{
 /*cards*/
 
 .card-container{
-    max-width: 1200px;
     padding: 40px 0;
-    margin: 0 auto;
     grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     border-bottom: 1px solid #a38e8e;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
-.card{
+.card1{
+    grid-column: 1/2;
+    max-width: 400px;
+    border: 2px solid;
+    border-color: rgb(248, 249, 250);
+    display: flex;
+}
+.card2{
+    grid-column: 2/3;
+    max-width: 400px;
+    border: 2px solid;
+    border-color: rgb(248, 249, 250);
+    display: flex;
+}
+.card3{
+    grid-column: 3/4;
     max-width: 400px;
     border: 2px solid;
     border-color: rgb(248, 249, 250);
@@ -96,7 +110,14 @@ main{
 
 /*Contato*/
 
+.contato{
+    grid-column: 1/2;
+}
 
+
+.imagens{
+    grid-column: 2/4;
+}
 
 
 
@@ -113,7 +134,7 @@ main{
 /*Footer*/
 .footer{
     background-color:rgb(119,119,119);
-    height: 30px;
+    height: 10vh ;
     color: white;
     display: flex;
     justify-content: center;
@@ -129,10 +150,30 @@ footer p{
 
 
 
+@media(max-width: 1250px){
 
 
-@media (max-width: 400px)
-{
+    .card-container{
+
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .card-imagem{
+
+        width: 130px;
+    
+    }
+
+}
+
+@media (max-width: 400px){
+    .menu{
+        flex-direction: column;
+        margin: 0 auto;
+    }
     .menu nav ul{
 
 
