@@ -70,25 +70,25 @@
         </section>
 
         <section class = "contato">
-
+            
             <h1>Contato</h1>
 
             <form name = "formulario">
                 <fieldset>
-                    <label for="setor-da-empresa"></label>
-                    <select name="setor-da-empresa" id="seletor-setor-da-empresa">
+                    <label for="setor-da-empresa">Setor da empresa</label>
+                    <select name="setor-da-empresa" id="seletor-setor-da-empresa" class = "input">
                         <option value = "Financeiro">Financeiro</option>
                         <option value = "Administrativo">Administrativo</option>
                         <option value = "Vendas">Vendas</option>
-                    </select>
+                    </select><br>
 
 
-                    <label for = "email">Email</label>
-                    <input type="email" name="email" id="input-email">
+                    <label for = "email">Email</label><br>
+                    <input type="email" name="email" id="input-email" class = "input" placeholder = "exemplo@dominio.com"><br>
 
-                    <label for = "mensagem">Mensagem</label>
-                    <input type="text" name="mensagem" id="input-mensagem">
-                    <button type="submit">Enviar Mensagem</button>
+                    <label for = "mensagem">Mensagem</label><br>
+                    <textarea name="mensagem" id="input-mensagem" class = "input" rows = "3"></textarea>
+                    <button type="submit" id = "botao">Enviar Mensagem</button>
                 </fieldset>
             </form>
         </section>

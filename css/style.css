@@ -113,12 +113,43 @@ main{
 .contato{
     grid-column: 1/2;
 }
+.contato h1{
+
+    font-size: 3em;
+    margin-bottom: 10px;
+
+}
+.contato form{
+
+    width: 80%;
 
 
+}
+.input{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+
+}
+#botao{
+
+    float: right;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background: none;
+    color: white;
+    background-color: rgb(40,167,69);
+}
+
+/*imagens*/
 .imagens{
     grid-column: 2/4;
 }
-
+.img{
+    width:70px;
+}
 
 
 
@@ -169,7 +200,21 @@ footer p{
 
 }
 
-@media (max-width: 400px){
+@media (max-width: 600px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .contato{
+
+        grid-column: 1/2;
+
+    }
+    .imagens{
+        grid-column: 1/2;
+    }
     .menu{
         flex-direction: column;
         margin: 0 auto;
