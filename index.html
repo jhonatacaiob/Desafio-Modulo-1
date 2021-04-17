@@ -6,34 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <title>Document</title>
+    <title>Resilia</title>
 </head>
 <body>
     
     <header>
-        <div class = "logo">
-            <p>Resilia</p>
+        <div class="menu-bg">
+            <div class="menu">
+                <div class = "logo">
+                    <p>Resilia</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a id = "home-button" href="#">Home</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li>
+                            <select class = "dropdown-nav">
+                                <option value="Dropdown">Dropdown</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav>
-            <ul>
-
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li>
-                    <select>
-                        <option value="Dropdown">Dropdown</option>
-                    </select>
-                </li>
-
-            </ul>
-
-        </nav>    
-    
     </header>
-    <section></section>
-    <section></section>
-    <footer></footer>
+
+    <main>
+        <section class = "cards">
+            <div class="card">
+                <div class="card-imagem">
+                    <img src="img/image.svg" alt="imagem" width="30px">
+                </div>
+                <div class = "card-conteudo">
+                    <h1>Card Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laudantium autem, veritatis, aliquid totam dolorum culpa quidem recusandae optio ullam quae, praesentium a earum numquam cupiditate harum natus nisi est.</p>
+                    <sub>Last updated 3 mins ago</sub>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-imagem">
+                    <img src="img/image.svg" alt="imagem" width="30px">
+                </div>
+                <div class = "card-conteudo">
+                    <h1>Card Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laudantium autem, veritatis, aliquid totam dolorum culpa quidem recusandae optio ullam quae, praesentium a earum numquam cupiditate harum natus nisi est.</p>
+                    <sub>Last updated 3 mins ago</sub>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-imagem">
+                    <img src="img/image.svg" alt="imagem" width="30px">
+                </div>
+                <div class = "card-conteudo">
+                    <h1>Card Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laudantium autem, veritatis, aliquid totam dolorum culpa quidem recusandae optio ullam quae, praesentium a earum numquam cupiditate harum natus nisi est.</p>
+                    <sub>Last updated 3 mins ago</sub>
+                </div>
+            </div>
+        </section>
+
+        <section class = "contato">
+
+            <h1>Contato</h1>
+
+            <form name = "formulario">
+                <fieldset>
+                    <label for="setor-da-empresa"></label>
+                    <select name="setor-da-empresa" id="seletor-setor-da-empresa">
+                        <option value = "Financeiro">Financeiro</option>
+                        <option value = "Administrativo">Administrativo</option>
+                        <option value = "Vendas">Vendas</option>
+                    </select>
+
+
+                    <label for = "email">Email</label>
+                    <input type="email" name="email" id="input-email">
+
+                    <label for = "mensagem">Mensagem</label>
+                    <input type="text" name="mensagem" id="input-mensagem">
+                    <button type="submit">Enviar Mensagem</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class = "imgs">
+            <div class = "img-box">
+                <div class="img">
+                    <img src="img/image.svg" alt="imagem" width="10px">
+                </div>
+                <sub>A caption for the above image</sub>
+            </div>
+            <div class = "img-box">
+                <div class="img">
+                    <img src="img/image.svg" alt="imagem" width="10px">
+                </div>
+                <sub>A caption for the above image</sub>
+            </div>
+            <div class = "img-box">
+                <div class="img">
+                    <img src="img/image.svg" alt="imagem" width="10px">
+                </div>
+                <sub>A caption for the above image</sub>
+            </div>
+            <div class = "img-box">
+                <div class="img">
+                    <img src="img/image.svg" alt="imagem" width="10px">
+                </div>
+                <sub>A caption for the above image</sub>
+            </div>
+            <div class = "img-box">
+                <div class="img">
+                    <img src="img/image.svg" alt="imagem" width="10px">
+                </div>
+                <sub>A caption for the above image</sub>
+            </div>
+            <div class = "img-box">
+                <div class="img">
+                    <img src="img/image.svg" alt="imagem" width="10px">
+                </div>
+                <sub>A caption for the above image</sub>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer><p>Resilia</p></footer>
 
 
 

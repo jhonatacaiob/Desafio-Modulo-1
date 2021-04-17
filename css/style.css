@@ -1,0 +1,73 @@
+
+
+
+/*header*/
+.menu-bg{
+    background-color: rgb(223, 223, 223);
+}
+.menu{
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo p{
+    font-size: 1.5em;
+}
+.menu nav ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu nav ul li{
+    padding: 0 10px;
+}
+
+#home-button{
+    text-decoration: none;
+    color: black;
+}
+
+.menu nav ul li *{
+    color: rgb(75, 75, 75);
+}
+.dropdown-nav{
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+
+
+
+/*content*/
+main{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+/*cards*/
+.cards{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1r);
+}
+.card-imagem{
+    grid-column: 1/2;
+    width: 100px;
+    height: 160px;
+}
+
+.card-conteudo{
+    grid-column: 3/4;
+}
